@@ -1,0 +1,146 @@
+https://gokulgamer256-ops.github.io/gokul-idli-podi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gokul Idly Podi</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#fff8f0;
+}
+
+header{
+background:#d84315;
+color:white;
+padding:15px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.container{
+padding:20px;
+text-align:center;
+}
+
+input, textarea{
+width:90%;
+max-width:400px;
+padding:12px;
+margin:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+background:#d84315;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#bf360c;
+}
+
+.products{
+display:none;
+}
+
+.card{
+background:white;
+padding:15px;
+margin:15px auto;
+border-radius:12px;
+max-width:400px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.price{
+font-size:18px;
+margin:5px 0;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>GOKUL IDLY PODI</header>
+
+<!-- LOGIN PAGE -->
+
+<div class="container" id="login">
+
+<h2>Welcome</h2>
+
+<input type="text" placeholder="Enter your name" required><br>
+<input type="number" placeholder="Enter phone number" required><br>
+
+<button onclick="showProducts()">Enter</button>
+
+</div>
+
+<!-- PRODUCT PAGE -->
+
+<div class="products container" id="products">
+
+<h2>Our Products</h2>
+
+<div class="card">
+<h3>Idly Podi</h3>
+<p class="price">100g – ₹50</p>
+<p class="price">200g – ₹100</p>
+<p class="price">300g – ₹150</p>
+<p class="price">500g – ₹250</p>
+</div>
+
+<h2>Place Your Order</h2>
+
+<textarea placeholder="Enter your delivery address"></textarea><br>
+
+<h3>Scan & Pay</h3>
+
+<img src="gpay.png" width="200">
+
+<br><br>
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<footer>
+© 2026 Gokul Idly Podi | Homemade with ❤️
+</footer>
+
+<script>
+
+function showProducts(){
+document.getElementById("login").style.display="none";
+document.getElementById("products").style.display="block";
+}
+
+function placeOrder(){
+alert("Order placed successfully! We will contact you soon.");
+}
+
+</script>
+
+</body>
+</html>
